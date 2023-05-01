@@ -17,3 +17,16 @@
 .repo:hover {
   box-shadow: 0 5px 10px 3px rgba(146, 84, 227, 0.5);
 }
+
+.project-item {
+  display: grid;
+  gap: .5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #222;
+  text-decoration: none;
+}
+
+.project-item img {
+  max-height: 20rem;
+}
