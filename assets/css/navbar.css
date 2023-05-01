@@ -28,14 +28,19 @@
 }
 
 @media screen and (max-width: 600px) {
+  .navbar.responsive a {
+    float: none;
+    display: block;
+  }
+  
   .navbar a:not(:first-child) {
     display: none;
   }
   .navbar a.icon {
-    float: right;
-    display: block;
+    position: absolute;
+    right: 0;
+    display: inline-block;
   }
-
   .navbar.responsive a.icon {
     position: absolute;
     right: 0;
@@ -44,6 +49,5 @@
   .navbar.responsive a {
     float: none;
     display: block;
-    text-align: center;
   }
 }
