@@ -1,0 +1,49 @@
+.credits {
+  margin-top: 30px;
+  margin-right: auto;
+  color: #222;
+}
+
+.credits a {
+  color: #222;
+}
+
+.skills-section {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #222;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+.skills-container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.skill-img {
+  width: 150px;
+  height: 150px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+
+.skill p {
+  margin: 0;
+}
+
+.skill h1 {
+  margin-bottom: 0;
+  font-size: 1.3rem;
+}

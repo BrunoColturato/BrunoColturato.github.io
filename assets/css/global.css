@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --nav_height: 70px;
+  --primary: #9254e3; /* rgba(146, 84, 227, 1) */
+  --secondary: #e5e5f7;
+  --card-size: 200px;
+}
+
+* {
+  font-family: "Montserrat", "Courier New", Courier, monospace;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--secondary);
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 60px;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+.title {
+  color: #222;
+  font-size: 2rem;
+}
+
+#about,
+#projects,
+#skills {
+  scroll-margin-top: var(--nav_height);
+}
+
+.spacer {
+  aspect-ratio: 960/150;
+  min-height: 150px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wave_top {
+  background-image: url(../images/waves/waves_top.svg);
+}
+
+.wave_down {
+  background-image: url(../images/waves/waves_down.svg);
+}

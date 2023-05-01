@@ -1,0 +1,18 @@
+.about_content {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.about_content img {
+  max-width: 350px;
+}
+
+.about_content p {
+  font-size: large;
+}
+
+.about_content strong {
+  color: var(--primary);
+}

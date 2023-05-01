@@ -1,415 +1,190 @@
 <!DOCTYPE html>
 <html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="desenvolvedor, portfolio, html, css, javascript" />
+    <meta name="description" content="Pagina pessoal de Bruno Alvarenga Colturato" />
+    <meta name="author" content="Bruno Alvarenga Colturato" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Image or CDN imports -->
+    <link rel="shortcut icon" href="assets/images/favicon_bw.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <title>Bruno A. Colturato</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- CSS imports -->
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/hero.css" />
+    <link rel="stylesheet" href="assets/css/about.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/cards.css" />
+    <link rel="stylesheet" href="assets/css/projects.css" />
+    <link rel="stylesheet" href="assets/css/skills.css" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- JavaScript imports -->
+    <script defer src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script defer src="assets/js/navbar.js"></script>
+    <script defer src="assets/js/hero.js"></script>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: MyResume
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
-
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-
-    <!-- ======= Nav-menu ======= -->
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Sobre</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Currículo</span></a></li>
-        <!-- <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfólio</span></a></li> -->
-      </ul>
-    </nav><!-- End Nav-menu -->
-
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Bruno Alvarenga Colturato</h1>
-      <p>Sou <span class="typed" data-typed-items="Estudante, Programador, Engenheiro"></span></p>
-      <div class="social-links">
-        <a href="https://github.com/BrunoColturato" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://www.linkedin.com/in/bruno-alvarenga-colturato" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Sobre mim</h2>
+    <title>Portfolio | Bruno A. Colturato</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="#home" class="nav-logo">BAC</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Habilidades</a>
+          </li>
+        </ul>
+        <div class="hamburguer">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
+      </nav>
+    </header>
 
-        <div class="pt-4 pt-lg-0 content">
-          <h3>Olá, eu sou o Bruno</h3>
-          <p>
-            Sou estudante de Engenharia da Computação pelo Universidade de São Paulo (USP) desde fevereiro de 2019
-            e estou no meu último ano de curso. Durante minha graduação, fiz parte da Secretaria Acadêmica da Engenharia
-            de Computação na USP de São Carlos e fui membro da extracurricular ADA, na qual desenvolvi projetos com Arduino
-            e fiz placas de circuito impresso (PCBs). Além disso, fui munitor da  disciplina Laboratório de Introdução à 
-            Ciência de Computação I no primeiro semestre de 2022 pela USP.
-          </p>
-          <div>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <strong>Idade:</strong> <span>22 anos</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Cidade:</strong> <span>São Carlos, SP</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Contato:</strong> <span><a href="https://www.linkedin.com/in/bruno-alvarenga-colturato">LinkedIn</a></span></li>
-            </ul>
-          </div>
+    <!-- Home page -->
+    <section id="home">
+      <div class="hero-image">
+        <div class="hero-content">
+          <h1>Sou Bruno Alvarenga Colturato</h1>
+          <p>E sou <span class="typewriter" data-typed-items="programador, engenheiro"></span></p>
+          <button>
+            <a href="https://www.linkedin.com/in/bruno-alvarenga-colturato/" target="_blank">
+              <i class="fa-brands fa-lg fa-linkedin" style="color: #005eff"></i>
+              Entre em contato</a
+            >
+          </button>
         </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Habilidades</h2>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6 skills-column">
-            <h3>Tecnologias</h3>
-            <ul>
-              <li><strong>Git & GitHub</strong></li>
-              <li><strong>C & C++</strong></li>
-              <li><strong>React</strong></li>
-              <li><strong>Java</strong></li>
-              <li><strong>Python</strong></li>
-              <li><strong>Javascript</strong></li>
-              <li><strong>HTML / CSS</strong></li>
-            </ul>
-          </div>
-          
-          <div class="col-lg-6 skills-column">
-            <h3>Idiomas</h3>
-            <ul>
-              <li><strong>Português: </strong><span>nativo</span></li>
-              <li><strong>Inglês: </strong><span>avançado</span></li>
-              <li><strong>Francês: </strong><span>intermediário (DELF B1: 66.5/100)</span></li>
-            </ul>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Currículo</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Educação</h3>
-            <div class="resume-item">
-              <h4>Bacharelado em Engenharia da Computação</h4>
-              <h5>2019 - Atual</h5>
-              <p><em>Universidade de São Paulo</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Iniciação científica</h4>
-              <h5>28 fev 21 – 30 dez 21</h5>
-              <p><em>Universidade de São Paulo</em></p>
-              <p>
-                Fui membro de um grupo de pesquisa na área de sistemas educacionais gamificados. Especificamente, eu 
-                era um dos desenvolvedores web do grupo. Nosso principal papel era desenvolver um site que 
-                implementasse na prática o que era pesquisado na teoria pelo grupo. As tecnologias utilizadas foram React,
-                Node.js, Sequelize, Express e MySQL.
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>SAEComp - Secretaria Acadêmica de Engenharia de Computação</h4>
-              <h5>1 ago 20 – 30 nov 21</h5>
-              <p><em>Universidade de São Paulo</em></p>
-              <p>
-                A Secretaria Acadêmica de Engenharia de Computação (SAEComp) é uma secretaria de representação 
-                estudantil dos alunos de Engenharia de Computação da USP de São Carlos. Na SAEComp, fiz parte da 
-                organização da recepção remota dos calouros do curso no ano de 2021. Também fiz parte do projeto de 
-                avaliação de professores de 2021, projeto responsável por coletar o feedback dos estudantes sobre as 
-                disciplinas ministradas ao longo do ano com objetivo de gerar melhorias no curso de Engenharia de 
-                Computação.
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>ADA: Projetos de Engenharia de Computação</h4>
-              <h5>1 abr 19 – 31 dez 20</h5>
-              <p><em>Universidade de São Paulo</em></p>
-              <p>
-                Fui membro do extracurricular da Universidade de São Paulo chamado ADA: Projetos de Engenharia de 
-                Computação. O grupo é responsável por projetar soluções de hardware e software para problemas reais de 
-                Engenharia de Computação. Nos projetos que participei pude desenvolver softwares para 
-                microcontroladores Arduino e projetar circuitos elétricos utilizando o Autodesk Eagle para confecção de 
-                placas de circuito impresso (PCBs).                
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Experiência</h3>
-            <div class="resume-item">
-              <h4>Monitor de disciplina</h4>
-              <h5>1 mar 22 – 31 jul 22</h5>
-              <p><em>Universidade de São Paulo</em></p>
-              <p>
-                Fui monitor do professor <a href="http://lattes.cnpq.br/3030047284254233">Seiji Isotani</a>, 
-                atualmente professor da Universidade de Harvard, na disciplina Laboratório de Introdução à 
-                Ciência de Computação I na Universidade de São Paulo como parte do Programa de Estímulo ao 
-                Ensino de Graduação (PEEG). Eu auxiliei os alunos a resolverem problemas básicos da ciência 
-                de computação na linguagem C. Como monitor, melhorei minhas habilidades de explicação ao 
-                melhor compreender as principais dificuldades dos alunos.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <!--
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portfólio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
       </div>
     </section>
-    -->
-    <!-- End Portfolio Section -->
 
-    <!-- ======= Call to action ======= -->
-    <div class="text-center call-to-action">
-      <h1>Entre em contato</h1>
-      <button type="button">
-        <a href="https://www.linkedin.com/in/bruno-alvarenga-colturato">Enviar mensagem</a>
-      </button>
-    </div>
-    <!-- End Call to action  -->
+    <div class="spacer wave_top"></div>
 
-  </main><!-- End #main -->
+    <main>
+      <!-- About me section -->
+      <section class="about" id="about">
+        <h1 class="title">SOBRE MIM</h1>
+        <div class="about_content">
+          <img src="./assets/images/profile-pic.png" alt="Foto de bruno" />
+          <p>
+            Estou no último ano do curso de <strong>Engenharia da Computação</strong> pela Universidade de São Paulo
+            (<strong>USP</strong>) no campus de São Carlos. Quero seguir carreira como desenvolvedor de <i>software</i>,
+            seja para aplicativos de celular, páginas <i>web</i> (<i>Front-End</i> e <i>Back-End</i>), aplicações para
+            computadores ou sistemas embarcados. Dessa forma, já estudei tecnologias como <strong>HTML</strong>,
+            <strong>CSS</strong>, <strong>React</strong>, <strong>Javascript</strong>, <strong>Java</strong>,
+            <strong>C++</strong> e um pouco de <strong>PHP</strong>. Estou animado para começar minha carreira e
+            disponível para estágios.
+          </p>
+        </div>
+      </section>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Bruno Alvarenga Colturato</span></strong>. All Rights Reserved
+      <!-- My projects section -->
+      <section id="projects">
+        <h1 class="title">PROJETOS</h1>
+        <div class="cards-container">
+          <div class="card">Em breve</div>
+          <div class="card">Em breve</div>
+          <div class="card">Em breve</div>
+          <div class="card">Em breve</div>
+        </div>
+        <a href="https://github.com/BrunoColturato" target="_blank" class="repo"
+          ><i class="fa-brands fa-github fa-xl"></i>Meus repositórios no GitHub</a
+        >
+      </section>
+
+      <!-- My skills section -->
+      <section id="skills">
+        <h1 class="title">HABILIDADES</h1>
+
+        <!-- Programming languages -->
+        <h2 class="skills-section"><i class="fa-solid fa-code"></i> PROGRAMAÇÃO</h2>
+        <div class="skills-container">
+          <div class="skill">
+            <img src="assets/images/coding/html-5.png" alt="Front" class="skill-img" />
+            <h1>HTML</h1>
+          </div>
+          <div class="skill">
+            <img src="assets/images/coding/js.png" alt="Front" class="skill-img" />
+            <h1>JavaScript</h1>
+          </div>
+          <div class="skill">
+            <img src="assets/images/coding/css-3.png" alt="Front" class="skill-img" />
+            <h1>CSS</h1>
+          </div>
+          <div class="skill">
+            <img src="assets/images/coding/react.png" alt="Front" class="skill-img" />
+            <h1>React</h1>
+          </div>
+          <div class="skill">
+            <img src="assets/images/coding/cpp.png" alt="Front" class="skill-img" />
+            <h1>C++</h1>
+          </div>
+          <div class="skill">
+            <img src="assets/images/coding/java.png" alt="Front" class="skill-img" />
+            <h1>Java</h1>
+          </div>
+          <div class="skill">
+            <img src="assets/images/coding/php.png" alt="Front" class="skill-img" />
+            <h1>PHP</h1>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <h2 class="skills-section"><i class="fa-solid fa-language"></i> IDIOMAS</h2>
+        <div class="skills-container">
+          <div class="skill">
+            <img src="assets/images/flags/brazil.png" alt="Front" class="skill-img" />
+            <h1>Português</h1>
+            <p>Nativo</p>
+          </div>
+          <div class="skill">
+            <img src="assets/images/flags/usa.png" alt="Front" class="skill-img" />
+            <h1>Inglês</h1>
+            <p>Avançado</p>
+          </div>
+          <div class="skill">
+            <img src="assets/images/flags/france.png" alt="Front" class="skill-img" />
+            <h1>Francês</h1>
+            <p>Intermediário</p>
+            <p>DELF B1: 66.5 / 100</p>
+          </div>
+        </div>
+
+        <p class="credits">
+          ** As imagens desta seção foram retiradas de <a href="https://www.flaticon.com/br" target="_blank">Flaticon.</a>
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer with links -->
+    <footer>
+      <div class="links-container">
+        <a href="https://www.linkedin.com/in/bruno-alvarenga-colturato/" target="_blank" class="link"
+          ><i class="fa-brands fa-linkedin-in fa-sm"></i
+        ></a>
+        <a href="https://github.com/BrunoColturato" target="_blank" class="link"><i class="fa-brands fa-github"></i></a>
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+      <p>&copy; Copyright <strong>Bruno Alvarenga Colturato</strong></p>
+    </footer>
+  </body>
 </html>
