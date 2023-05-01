@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500;1,700;1,800&display=swap" rel="stylesheet" />
+
+    
+    <title>Results summary component</title>
+  </head>
+  <body>
+    <main>
+      <div class="result-summary">
+        <!-- Result part -->
+        <div class="result grid-flow">
+          <h1 class="section-title">Your Result</h1>
+
+          <p class="result-score"><span id="global-score">0</span> of 100</p>
+
+          <div class="grid-flow" data-spacing="small">
+            <p class="result-feedback">Great</p>
+            <p>You scored higher than 65% of the people who have taken these tests.</p>
+          </div>
+        </div>
+
+        <!-- Summary part -->
+        <div class="summary grid-flow" id="summary">
+          <h2 class="section-title">Summary</h2>
+          <div class="grid-flow" data-spacing="small">
+            <!-- Reaction -->
+            <div class="summary-item" type="type-1">
+              <div class="summary-type">
+                <img src="assets/images/icon-reaction.svg" alt="reaction icon" />
+                <span id="type-1-category">Category</span>
+              </div>
+              <div class="summary-points"><span id="type-1-points">0</span> / 100</div>
+            </div>
+
+            <!-- Memory -->
+            <div class="summary-item" type="type-2">
+              <div class="summary-type">
+                <img src="assets/images/icon-memory.svg" alt="memory icon" />
+                <span id="type-2-category">Category</span>
+              </div>
+              <div class="summary-points"><span id="type-2-points">0</span> / 100</div>
+            </div>
+
+            <!-- Verbal -->
+            <div class="summary-item" type="type-3">
+              <div class="summary-type">
+                <img src="assets/images/icon-verbal.svg" alt="verbal icon" />
+                <span id="type-3-category">Category</span>
+              </div>
+              <div class="summary-points"><span id="type-3-points">0</span> / 100</div>
+            </div>
+
+            <!-- Visual -->
+            <div class="summary-item" type="type-4">
+              <div class="summary-type">
+                <img src="assets/images/icon-visual.svg" alt="visual icon" />
+                <span id="type-4-category">Category</span>
+              </div>
+              <div class="summary-points"><span id="type-4-points">0</span> / 100</div>
+            </div>
+          </div>
+
+          <button class="button">Continue</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="https://brunocolturato.github.io/" target="_blank">Bruno Alvarenga Colturato</a>.
+      </p>
+    </footer>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="module" src="assets/js/script.js"></script>
+  </body>
+</html>
