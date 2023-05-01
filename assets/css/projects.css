@@ -11,6 +11,7 @@
   border: 2px solid var(--primary);
   text-decoration: none;
   transition: all 0.1s;
+  text-align: center;
 }
 
 .repo:hover {
