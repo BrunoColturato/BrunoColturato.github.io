@@ -1,105 +1,49 @@
 .navbar {
   position: fixed;
-  left: 0;
   top: 0;
-  z-index: 1;
-
-  width: 100%;
-  height: var(--nav_height);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #eee;
-  padding: 0 50px;
-}
-
-.nav-menu {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  margin: 0;
-  list-style: none;
+  left: 0;
+  right: 0;
+  overflow: hidden;
   z-index: 99;
+  background-color: #fefefe;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
 }
 
-.nav-link,
-.nav-logo {
-  color: black;
+.navbar a {
+  display: inline-block;
+  text-align: center;
+  color: #222;
+  padding: 20px 16px;
   text-decoration: none;
 }
 
-.nav-link {
-  padding: 30px 0;
-  transition: 0.25s ease;
-}
-
-.nav-link:hover {
+.navbar a:hover {
   color: var(--primary);
   text-decoration: underline;
 }
 
-.nav-logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.hamburguer {
+.navbar .icon {
   display: none;
-  cursor: pointer;
 }
 
-.bar {
-  display: block;
-  width: 28px;
-  height: 3px;
-  border-radius: 2px;
-  margin: 5px auto;
-  background-color: black;
-  transition: all 0.3s ease-in-out;
-}
-
-@media screen and (max-width: 768px) {
-  .hamburguer {
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
     display: block;
-    color: black;
-    padding: 10px;
   }
-  .hamburguer.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburguer.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburguer.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  .nav-menu {
-    position: absolute;
-    top: var(--nav_height);
-    left: -100%;
 
-    width: 100%;
-    padding: 0;
-    
-    flex-direction: column;
-    gap: 0;
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
     text-align: center;
-    border-radius: 0 0 20px 20px;
-    background-color: #eee;
-    transition: 0.3s;
-  }
-  .nav-item {
-    display: flex;
-    width: 100%;
-    padding: 0;
-  }
-  .nav-link {
-    padding: 0;
-    width: 100%;
-    padding: 16px 0;
-  }
-  .nav-menu.active {
-    left: 0;
   }
 }

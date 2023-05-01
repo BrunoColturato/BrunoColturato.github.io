@@ -1,14 +1,8 @@
-const hamburguer = document.querySelector(".hamburguer");
-const navMenu = document.querySelector(".nav-menu");
-
-hamburguer.addEventListener("click", () => {
-  hamburguer.classList.toggle("active");
-  navMenu.classList.toggle("active");
-});
-
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") {
-    hamburguer.classList.remove("active");
-    navMenu.classList.remove("active");
+function toggleNavbar() {
+  let nav = document.getElementById("navbar");
+  if (nav.className === "navbar") {
+    nav.className += " responsive";
+  } else {
+    nav.className = "navbar";
   }
-});
+}
