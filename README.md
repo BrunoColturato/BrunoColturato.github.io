@@ -14,4 +14,4 @@ To access the site, click [here](https://brunocolturato.github.io).
 
 ## Author
 
-- Website - [Bruno Alvarenga Colturato](brunocolturato.github.io)
+- Website - [Bruno Alvarenga Colturato](https://brunocolturato.github.io)
