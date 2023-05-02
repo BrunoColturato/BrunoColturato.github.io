@@ -21,5 +21,5 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Author
 
-- Website - [Bruno Alvarenga Colturato](brunocolturato.github.io)
+- Website - [Bruno Alvarenga Colturato](https://brunocolturato.github.io)
 - Frontend Mentor - [@BrunoColturato](https://www.frontendmentor.io/profile/BrunoColturato)
