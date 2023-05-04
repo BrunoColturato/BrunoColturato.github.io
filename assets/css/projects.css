@@ -1,32 +1,51 @@
-.repo {
+.project-item {
+  display: grid;
+  align-items: end;
+  gap: 1rem;
+  height: 100%;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.project-item a:first-child {
+  display: grid;
+  place-content: center;
+}
+
+.project-item img {
+  max-height: 20rem;
+}
+
+.repo,
+.repo-link {
   display: flex;
   align-items: center;
-  gap: 5px;
-  padding: 20px;
-  margin-top: 50px;
-  color: var(--primary);
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 10px;
+  text-align: center;
+
   font-weight: 600;
+  color: var(--primary);
   border-radius: 30px;
   background-color: #fff;
   border: 2px solid var(--primary);
+  
   text-decoration: none;
   transition: all 0.1s;
   text-align: center;
 }
 
-.repo:hover {
-  box-shadow: 0 5px 10px 3px rgba(146, 84, 227, 0.5);
+.repo {
+  margin-top: 4rem;
+  color: var(--primary);
+  padding: 20px;
+  font-size: 1.2rem;
 }
 
-.project-item {
-  display: grid;
-  gap: .5rem;
-  text-align: center;
-  font-size: 1rem;
-  color: #222;
-  text-decoration: none;
-}
-
-.project-item img {
-  max-height: 20rem;
+.repo:hover,
+.repo:focus-visible,
+.repo-link:hover,
+.repo-link:focus-visible {
+  box-shadow: 0 0 10px 3px rgba(146, 84, 227, 0.5);
 }
