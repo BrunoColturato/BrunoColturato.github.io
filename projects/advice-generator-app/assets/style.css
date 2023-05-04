@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Manrope";
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("./fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+}
+
+:root {
+  /* Colors */
+  --clr-primary-light: hsl(193, 38%, 86%);
+  --clr-primary-neon: hsl(150, 100%, 66%);
+
+  --clr-neutral-hsl-light: 217, 19%, 38%;
+  --clr-neutral-light: hsl(var(--clr-neutral-hsl-light));
+  --clr-neutral-dark: hsl(17, 19%, 24%);
+  --clr-neutral-black: hsl(218, 23%, 16%);
+
+  /* Font */
+  --font-family-default: "Manrope", sans-serif;
+
+  /* Font size */
+  --fs-small: 15px;
+  --fs-big: 28px;
+
+  /* Font weight */
+  --fw-regular: 500;
+  --fw-black: 800;
+}
+
+/********** General **********/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/********** Advice Generator **********/
+body {
+  font-family: var(--font-family-default);
+  font-size: var(--fs-700);
+  color: var(--clr-primary-light);
+  background-color: var(--clr-neutral-black);
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  max-width: 35rem;
+  text-align: center;
+  padding: 3rem;
+  padding-bottom: 4.5rem;
+  margin-inline: 1rem;
+
+  border-radius: 1rem;
+  background-color: hsl(var(--clr-neutral-hsl-light), 0.4);
+  position: relative;
+}
+
+.card h1 {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-black);
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  color: var(--clr-primary-neon);
+}
+
+.card p {
+  font-size: var(--fs-big);
+  font-weight: var(--fw-black);
+}
+
+.button {
+  --width: 4rem;
+  width: var(--width);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border-style: none;
+  background-color: var(--clr-primary-neon);
+
+  display: grid;
+  place-content: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  transform: translateY(50%);
+
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus-visible {
+  box-shadow: 0 0 2.5rem 0.1rem var(--clr-primary-neon);
+  transition: 0.3s;
+}
+
+.button img {
+  width: calc(0.4 * var(--width));
+}
+
+/********** Footer **********/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+  text-align: center;
+  
+  position: absolute;
+  bottom: 15px;
+  margin-inline: 1rem;
+}
+
+footer a {
+  color: #ddd;
+}
